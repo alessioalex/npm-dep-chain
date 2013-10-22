@@ -1,0 +1,16 @@
+{
+  "name": "examples",
+  "version": "0.0.0",
+  "description": "examples",
+  "main": "basic.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexandru Vladutu <alexandru.vladutu@gmail.com> (http://careers.stackoverflow.com/alessioalex)",
+  "license": "MIT",
+  "dependencies": {
+    "treeify": "~1.0.1",
+    "semver": "~2.1.0",
+    "read-package-json": "~1.1.3"
+  }
+}

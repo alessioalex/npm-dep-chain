@@ -1,0 +1,38 @@
+{
+  "name": "npm-dep-chain",
+  "version": "0.0.1",
+  "description": "Get all the NPM dependencies for a module / set of modules (goes down the stack, for all the subdependencies etc)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alessioalex/npm-dep-chain"
+  },
+  "bugs": {
+    "url": "https://github.com/alessioalex/npm-dep-chain/issues"
+  },
+  "keywords": [
+    "npm",
+    "registry",
+    "package",
+    "dependency",
+    "dependency-chain"
+  ],
+  "author": "Alexandru Vlăduţu <alexandru.vladutu@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "semver"      : "2.1.x",
+    "once"        : "1.2.x",
+    "npm-pkginfo" : "0.0.x",
+    "after"       : "0.8.x",
+    "errto"       : "0.2.x"
+  },
+  "devDependencies": {
+    "mocha"       : "1.13.x",
+    "after"       : "0.8.x",
+    "xtend"       : "2.1.x",
+    "npm-pkginfo" : "0.0.x"
+  },
+  "scripts": {
+    "test": "node test/functional/index.js"
+  }
+}
