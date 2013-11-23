@@ -58,7 +58,9 @@ function getBulkNpmData(pkgs, collection, npmClient, callback) {
   var next, results;
 
   results = [];
-  next    = after(pkgs.length, callback);
+  next    = after(pkgs.length, function(err) {
+    return callback(err, results);
+  });
 
   pkgs.forEach(function(pkg) {
     // make sure not to make unnecessary queries to the registry
