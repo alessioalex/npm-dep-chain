@@ -69,7 +69,7 @@ function getBulkNpmData(pkgs, collection, npmClient, callback) {
     }
 
     getNpmData(pkg, npmClient, errTo(callback, function(found) {
-      results.push(found);
+      if (found) { results.push(found); }
 
       next(null, results);
     }));

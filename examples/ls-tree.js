@@ -57,6 +57,12 @@ function getTree(root, deps) {
 function populateItem(subtree, root, deps) {
   var version, directDeps;
 
+  // dependency missing from the registry ?!
+  if (root.name && (typeof deps[root.name] === 'undefined')) {
+    subtree[root.name + '@MISSING_FROM_REGISTRY'] = {};
+    return;
+  }
+
   version = semver.maxSatisfying(Object.keys(deps[root.name]), root.version);
 
   subtree[root.name + '@' + version] = {};
