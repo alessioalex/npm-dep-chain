@@ -1,6 +1,6 @@
 {
   "name": "npm-dep-chain",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Get all the NPM dependencies for a module / set of modules (goes down the stack, for all the subdependencies etc)",
   "main": "index.js",
   "repository": {
